@@ -1,0 +1,273 @@
+/* アスキーコードをutf8に */
+@charset "utf-8";
+
+/* 共通デザイン */
+/* ページのスクロール移動をスムーズに */
+html {
+  scroll-behavior: smooth;
+}
+
+:target {
+  padding-top: 64px;
+}
+
+/* body全体にフォント指定と背景色 */
+body {
+  font-family: sans-serif;
+  background-color: #fff1cf;
+}
+
+/* h2とh3の文字デザインを指定 */
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #6f4c5b;
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* ヘッダのスタイルを指定 */
+header {
+  width: 960px;
+  margin: 32px auto 32px auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+header img {
+  width: 640px;
+}
+
+.site_reserve {
+  width: 320px;
+  text-align: right;
+}
+
+/* スマホ用ヘッダのスタイル*/
+@media screen and (max-width: 960px) {
+  header {
+    width: 150%;
+  }
+
+  header img {
+    width: 100%;
+  }
+
+  .site_reserve {
+    width: 100%;
+    text-align: center;
+  }
+}
+/* メインの指定 */
+main {
+  max-width: 960px;
+  margin: 0 auto 0 auto;
+  text-align: center;
+  background-color: #fff;
+}
+
+/* メインのナビゲーションバーを指定 */
+nav {
+  background-color: #6f4c5b;
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 960px;
+  margin: 8px auto 8px auto;
+  list-style: none;
+}
+
+nav li {
+  width: 96px;
+  margin: 8px;
+  text-align: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+}
+
+nav a:hover {
+  opacity: 0.7;
+}
+/* メインのイベント画像の指定 */
+#main-event img {
+  width: 280px;
+  margin: 8px;
+}
+
+/* スマホ用イベント画像のスタイル*/
+@media screen and (max-width: 960px) {
+  #main-event img {
+    width: 90%;
+  }
+}
+
+/* テーマロゴの画像のスタイル指定 */
+.theme_logo {
+  margin: 0 auto 0 auto;
+}
+
+/* スマホ用テーマロゴの画像のデザイン指定 */
+@media screen and (max-width: 960px) {
+  .theme_logo img {
+    width: 100%;
+  }
+}
+/* メインのお知らせの指定 */
+#main-news {
+  margin: 80px auto 80px auto;
+}
+#main-news h3 {
+  margin: 32px auto 4px auto;
+}
+.twitter-timeline {
+  margin: 0 auto 0 auto;
+}
+
+/* スマホ用お知らせのスタイル*/
+@media screen and (max-width: 960px) {
+  .twitter-timeline {
+    width: 100%;
+  }
+  .calendar_news iframe {
+    width: 100%;
+  }
+}
+/* メインのコンセプトの指定 */
+#main-concept {
+  margin: 80px auto 80px auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#main-concept img {
+  margin: 0 auto 0 auto;
+}
+
+#main-concept h2 {
+  width: 100%;
+}
+
+.concept_category {
+  width: 50%;
+  margin: 8px auto 8px auto;
+}
+
+.concept_category img {
+  width: 320px;
+  border-radius: 32px;
+}
+.concept_category p {
+  margin: 80px auto 0 auto;
+  padding: 32px;
+  width: 320px;
+  line-height: 32px;
+  font-size: 18px;
+  background-color: #fff0f5;
+  border: dashed 2px #773d50;
+  color: #6f4c5b;
+}
+
+/* スマホ用コンセプトのスタイル*/
+@media screen and (max-width: 960px) {
+  .concept_category {
+    width: 100%;
+  }
+
+  .concept_category p {
+    margin: 0 auto 32px auto;
+  }
+}
+
+/* メインのメニューの指定 */
+#main-menu {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#main-menu img {
+  margin: 0 auto 0 auto;
+}
+
+#main-menu h2 {
+  width: 100%;
+}
+
+.menu_category {
+  width: 50%;
+  margin: 0 auto 32px auto;
+}
+
+.menu_category img {
+  width: 320px;
+  height: 240px;
+}
+
+.menu_category ul {
+  text-align: center;
+  list-style: none;
+}
+
+/* スマホ用メニューのスタイル*/
+@media screen and (max-width: 960px) {
+  .menu_category {
+    width: 100%;
+  }
+}
+/* メインのメニューの指定 */
+#main-menu {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#main-menu img {
+  margin: 0 auto 0 auto;
+}
+
+#main-menu h2 {
+  width: 100%;
+}
+
+.menu_category {
+  width: 50%;
+  margin: 0 auto 32px auto;
+}
+
+.menu_category img {
+  width: 320px;
+  height: 240px;
+}
+
+.menu_category ul {
+  text-align: center;
+  list-style: none;
+}
+
+/* スマホ用メニューのスタイル*/
+@media screen and (max-width: 960px) {
+  .menu_category {
+    width: 100%;
+  }
+}
+/* スマホ用アクセスのスタイル*/
+@media screen and (max-width: 960px) {
+  .access_map iframe {
+    width: 100%;
+  }
+}
+
+/* フッターの指定 */
+footer {
+  text-align: center;
+}
