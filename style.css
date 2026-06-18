@@ -49,7 +49,7 @@ header img {
 /* スマホ用ヘッダのスタイル*/
 @media screen and (max-width: 960px) {
   header {
-    width: 150%;
+    width: 100%;
   }
 
   header img {
@@ -128,18 +128,21 @@ nav a:hover {
 #main-news {
   margin: 80px auto 80px auto;
 }
-#main-news h3 {
-  margin: 32px auto 4px auto;
-}
-.twitter-timeline {
+
+#main-news img {
+  width: 80%;
   margin: 0 auto 0 auto;
 }
 
+#main-news h2 {
+  width: 100%;
+  margin: 0 auto 80px auto;
+  color: #DEBA9D;
+}
+
+
 /* スマホ用お知らせのスタイル*/
 @media screen and (max-width: 960px) {
-  .twitter-timeline {
-    width: 100%;
-  }
   .calendar_news iframe {
     width: 100%;
   }
@@ -152,32 +155,36 @@ nav a:hover {
 }
 
 #main-concept img {
+  width: 80%;
   margin: 0 auto 0 auto;
 }
 
 #main-concept h2 {
   width: 100%;
+  margin: 0 auto 5px auto;
+  color: #DEBA9D;
 }
 
 .concept_category {
   width: 50%;
-  margin: 8px auto 8px auto;
+  margin: 0 auto 10px auto;
+}
+
+.concept_category p {
+  margin: 100px auto 0 auto;
+  padding: 2px;
+  width: 320px;
+  line-height: 32px;
+  font-size: 18px;
+  color: #6f4c5b;
 }
 
 .concept_category img {
   width: 320px;
+  margin: 10px auto 10px auto;
   border-radius: 32px;
 }
-.concept_category p {
-  margin: 80px auto 0 auto;
-  padding: 32px;
-  width: 320px;
-  line-height: 32px;
-  font-size: 18px;
-  background-color: #fff0f5;
-  border: dashed 2px #773d50;
-  color: #6f4c5b;
-}
+
 
 /* スマホ用コンセプトのスタイル*/
 @media screen and (max-width: 960px) {
@@ -186,7 +193,7 @@ nav a:hover {
   }
 
   .concept_category p {
-    margin: 0 auto 32px auto;
+    margin: 50px auto 5px auto;
   }
 }
 
@@ -198,10 +205,13 @@ nav a:hover {
 
 #main-menu img {
   margin: 0 auto 0 auto;
+  width:80%;
 }
 
 #main-menu h2 {
   width: 100%;
+  margin: 0 auto 50px auto;
+  color: #DEBA9D;
 }
 
 .menu_category {
@@ -210,8 +220,7 @@ nav a:hover {
 }
 
 .menu_category img {
-  width: 320px;
-  height: 240px;
+  width: 360px;
 }
 
 .menu_category ul {
@@ -225,41 +234,44 @@ nav a:hover {
     width: 100%;
   }
 }
-/* メインのメニューの指定 */
-#main-menu {
-  display: flex;
-  flex-wrap: wrap;
+
+/* テイクアウト */
+#main-takeout img {
+  width: 80%;
 }
 
-#main-menu img {
-  margin: 0 auto 0 auto;
-}
-
-#main-menu h2 {
+#main-takeout h2 {
   width: 100%;
+  margin: 0 auto 50px auto;
+  color: #DEBA9D;
 }
 
-.menu_category {
-  width: 50%;
-  margin: 0 auto 32px auto;
+#main-takeout h3 {
+  width: 100%;
+  color: #6f4c5b
+}
+ 
+.takeout_menu img {
+  width : 360px;
 }
 
-.menu_category img {
-  width: 320px;
-  height: 240px;
-}
-
-.menu_category ul {
+.takeout_menu ul {
   text-align: center;
   list-style: none;
 }
 
-/* スマホ用メニューのスタイル*/
-@media screen and (max-width: 960px) {
-  .menu_category {
-    width: 100%;
-  }
+/* アクセス */
+#main-access img {
+  width: 80%;
+  margin: 0 auto 0 auto;
 }
+
+#main-access h2 {
+  width: 100%;
+  margin: 0 auto 50px auto;
+  color:  #DEBA9D;
+}
+
 /* スマホ用アクセスのスタイル*/
 @media screen and (max-width: 960px) {
   .access_map iframe {
