@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>課題２</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon (2).ico" type="image/x-icon">
+</head>
+<body>
+    <script src="main.js" defer></script>
+
+    <header>
+        <div class="header">
+            <img src="はぴりゅう.png" alt="画像">
+            <h2>福井クイズ</h2>
+        </div>
+    </header>
+
+    <main>
+        
+        <!--スタート画面-->
+        <section id="screen-start">
+            <h1>福井クイズ</h1>
+            <p>
+                福井県についてのクイズです！<br>何問正解できる？
+            </p>
+            <button id="btn-start" class="btn-start btn-primary">
+                <h3>スタート</h3>
+            </button>
+        </section>
+
+        <!--ステージ選択画面-->
+        <section id="screen-stageselect" class="hidden">
+            <h4>ステージを選択してください</h4>
+            <div class="stage-select">
+                <button class="stage-btn" data-stage="municipalities">
+                    <h3>地名</h3>
+                    <p>全17問</p>
+                </button>
+                <button class="stage-btn" data-stage="sightseeing">
+                    <h3>観光</h3>
+                    <p>全10問</p>
+                </button>
+                <button class="stage-btn" data-stage="speciality">
+                    <h3>特産品・名産品</h3>
+                    <p>全10問</p>
+                </button>
+            </div>
+        </section>
+        
+        <!--本編-->
+        <section id="screen-game" class="hidden">
+            <div class="game-layout">
+                <div class="quiz-main game-card">
+                    <div id="question-index" class="question-number">
+                        第１問
+                    </div>
+
+                    <!--問題文-->
+                    <div class="question-box">
+                        <h3 id="question-text" class="question-text"></h3>
+                        <img id="question-image" class="question-img hidden" alt="地図">
+                    </div>
+                    
+                    <!--選択肢-->
+                    <div class="options-container">
+                        <div id="options-grid"></div>  
+                            
+                        <!--解答と解説-->
+                        <div id="feedback-panel" class="feedback-panel hidden">
+                            <div id="feedback-title" class="feedback-title">
+                                <!--正解 / 不正解-->
+                            </div>
+                            <p id="feedback-description" class="feedback-description">
+                                解説
+                            </p>
+                            <button id="btn-next" class="btn-next">
+                                次の問題
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--結果-->
+        <section id="screen-result" class="hidden">
+            <h2>結果発表</h2>
+            <p id="result-score" class="result-score"></p>
+            <div class="result-buttons">
+                <button id="btn-restart">もう一度挑戦する</button>
+                <button id="btn-select">ステージ選択画面に戻る</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; kadai 2. Fukui Quiz</p>
+    </footer>
+
+</body>
+</html>
