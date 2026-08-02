@@ -1,285 +1,228 @@
-/* アスキーコードをutf8に */
-@charset "utf-8";
-
-/* 共通デザイン */
-/* ページのスクロール移動をスムーズに */
-html {
-  scroll-behavior: smooth;
-}
-
-:target {
-  padding-top: 64px;
-}
-
-/* body全体にフォント指定と背景色 */
+/* body全体 */
 body {
-  font-family: sans-serif;
-  background-color: #fff1cf;
+    font-family: sans-serif;
+    color: #4c3725;
+    background-color: #fdfdfd;
 }
 
-/* h2とh3の文字デザインを指定 */
-h2 {
-  font-size: 24px;
-  font-weight: bold;
-  color: #6f4c5b;
-}
-
-h3 {
-  font-size: 16px;
-  font-weight: bold;
-}
-
-/* ヘッダのスタイルを指定 */
+/* ヘッダ */
 header {
-  width: 960px;
-  margin: 32px auto 32px auto;
-  display: flex;
-  flex-wrap: wrap;
+    width: 960px;
+    margin: 0 auto 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header {
+    display: flex;
 }
 
 header img {
-  width: 640px;
+    width: 67px;
 }
 
-.site_reserve {
-  width: 320px;
-  text-align: right;
+header h2 {
+    width: 100%;
+    text-align: left;
 }
 
-/* スマホ用ヘッダのスタイル*/
+/* スマホ用ヘッダ */
 @media screen and (max-width: 960px) {
   header {
     width: 100%;
   }
 
   header img {
-    width: 100%;
+    width: 15%;
   }
 
-  .site_reserve {
+  header h2 {
+    width: 100%;
+    text-align: left;
+  }
+} 
+
+/*ゲームの画面切り替え、モーダル表示、要素の動的なON/OFFを制御するWeb制作の定番設定*/
+.hidden {
+    display: none !important;
+}
+
+/* メイン */
+main {
+    max-width: 960px;
+    margin: 20px auto 40px auto;
+    text-align: center;
+    color: #5f5434;
+    background-color: #f6ecdc;
+    border: 1px solid #e9a02a;
+    /*角を丸める*/
+    border-radius: 50px;
+}
+
+/* スタート画面 */
+#screen-start h1 {
+    width: 100%;
+    margin: 80px auto 20px auto;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+#btn-start {
+    margin: 20px auto 80px;
+    background-color: #e9a02a;
+    color:#f6ecdc;
+    border: none;
+}
+
+#btn-start h3 {
     width: 100%;
     text-align: center;
-  }
-}
-/* メインの指定 */
-main {
-  max-width: 960px;
-  margin: 0 auto 0 auto;
-  text-align: center;
-  background-color: #fff;
+    display: flex;
+    margin: 20px 130px 20px 130px;
 }
 
-/* メインのナビゲーションバーを指定 */
-nav {
-  background-color: #6f4c5b;
-  position: sticky;
-  top: 0;
-  width: 100%;
-}
-
-nav ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  max-width: 960px;
-  margin: 8px auto 8px auto;
-  list-style: none;
-}
-
-nav li {
-  width: 96px;
-  margin: 8px;
-  text-align: center;
-}
-
-nav a {
-  text-decoration: none;
-  color: #fff;
-}
-
-nav a:hover {
-  opacity: 0.7;
-}
-/* メインのイベント画像の指定 */
-#main-event img {
-  width: 280px;
-  margin: 8px;
-}
-
-/* スマホ用イベント画像のスタイル*/
-@media screen and (max-width: 960px) {
-  #main-event img {
-    width: 90%;
-  }
-}
-
-/* テーマロゴの画像のスタイル指定 */
-.theme_logo {
-  margin: 0 auto 0 auto;
-}
-
-/* スマホ用テーマロゴの画像のデザイン指定 */
-@media screen and (max-width: 960px) {
-  .theme_logo img {
+/* ステージ選択画面 */
+#screen-stageselect h4 {
     width: 100%;
-  }
-}
-/* メインのお知らせの指定 */
-#main-news {
-  margin: 80px auto 80px auto;
+    margin: 80px auto 40px auto;
+    text-align: center;
+    font-size: 20px;
 }
 
-#main-news img {
-  width: 80%;
-  margin: 0 auto 0 auto;
-}
-
-#main-news h2 {
-  width: 100%;
-  margin: 0 auto 80px auto;
-  color: #DEBA9D;
-}
-
-
-/* スマホ用お知らせのスタイル*/
-@media screen and (max-width: 960px) {
-  .calendar_news iframe {
+.stage-select {
     width: 100%;
-  }
-}
-/* メインのコンセプトの指定 */
-#main-concept {
-  margin: 80px auto 80px auto;
-  display: flex;
-  flex-wrap: wrap;
+    margin: 0px auto 80px auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
-#main-concept img {
-  width: 80%;
-  margin: 0 auto 0 auto;
+.stage-btn {
+    background-color: #e9a02a;
+    color:#f6ecdc;
+    border: none;
 }
 
-#main-concept h2 {
-  width: 100%;
-  margin: 0 auto 5px auto;
-  color: #DEBA9D;
+.stage-select h3 {
+    width: 150px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
 }
 
-.concept_category {
-  width: 50%;
-  margin: 0 auto 10px auto;
+/* スマホ用ステージ選択画面 */
+@media screen {
+    .stage-btn{
+        margin: 10px auto 10px auto;
+    }
 }
 
-.concept_category p {
-  margin: 100px auto 0 auto;
-  padding: 2px;
-  width: 320px;
-  line-height: 32px;
-  font-size: 18px;
-  color: #6f4c5b;
+/* 本編 */
+.question-number {
+    max-width: 960px;
+    text-align: center;
+    background-color: #d2986a;
+    /*上下に15px、左右に10pxの余白*/
+    padding: 15px 10px;
+    border-radius: 50px 50px 0 0;
 }
 
-.concept_category img {
-  width: 320px;
-  margin: 10px auto 10px auto;
-  border-radius: 32px;
-}
-
-
-/* スマホ用コンセプトのスタイル*/
-@media screen and (max-width: 960px) {
-  .concept_category {
+/* 問題文 */
+.question-box {
     width: 100%;
-  }
-
-  .concept_category p {
-    margin: 50px auto 5px auto;
-  }
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-/* メインのメニューの指定 */
-#main-menu {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-#main-menu img {
-  margin: 0 auto 0 auto;
-  width:80%;
-}
-
-#main-menu h2 {
-  width: 100%;
-  margin: 0 auto 50px auto;
-  color: #DEBA9D;
-}
-
-.menu_category {
-  width: 50%;
-  margin: 0 auto 32px auto;
-}
-
-.menu_category img {
-  width: 360px;
-}
-
-.menu_category ul {
-  text-align: center;
-  list-style: none;
-}
-
-/* スマホ用メニューのスタイル*/
-@media screen and (max-width: 960px) {
-  .menu_category {
+#question-text {
     width: 100%;
-  }
+    margin: 40px auto 20px auto;
 }
 
-/* テイクアウト */
-#main-takeout img {
-  width: 80%;
+#question-image {
+    width: 450px;
+    max-width: 100%;
+    margin: 0 auto 40px auto;
+    text-align: center;
 }
 
-#main-takeout h2 {
-  width: 100%;
-  margin: 0 auto 50px auto;
-  color: #DEBA9D;
+/* スマホ用問題文 */
+@media screen and (max-width: 960px){
+    #question-image{
+        width: 80%;
+        text-align: center;
+    }
 }
 
-#main-takeout h3 {
-  width: 100%;
-  color: #6f4c5b
-}
- 
-.takeout_menu img {
-  width : 360px;
-}
-
-.takeout_menu ul {
-  text-align: center;
-  list-style: none;
-}
-
-/* アクセス */
-#main-access img {
-  width: 80%;
-  margin: 0 auto 0 auto;
-}
-
-#main-access h2 {
-  width: 100%;
-  margin: 0 auto 50px auto;
-  color:  #DEBA9D;
-}
-
-/* スマホ用アクセスのスタイル*/
-@media screen and (max-width: 960px) {
-  .access_map iframe {
+/* 選択肢 */
+#options-grid {
     width: 100%;
-  }
+    margin: 0 0 40px auto;
+    flex: block;
+    justify-content: flex-start;
 }
 
-/* フッターの指定 */
+#options-grid button{
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    padding: 14px 0;
+    background-color: #f6ecdc;
+    color: #e9a02a;
+    border: solid 2px #e9a02a;
+}
+
+/* 解答と解説 */
+#feedback-title {
+    width: 100%;
+    text-align: center;
+}
+
+#feedback-description {
+    width: 80%;
+    text-align: start;
+    padding: 0 16px;
+    margin: 20px auto 0 auto;
+}
+
+#btn-next {
+    width: 30%;
+    margin: 40px auto 40px;
+    padding: 10px 20px;
+    background-color: #e9a02a;
+    color:#f6ecdc;
+    border: none;
+}
+
+/* 結果画面 */
+#screen-result h2 {
+    margin: 60px auto 20px auto;
+    font-size: 30px;
+}
+
+#result-score {
+    font-size: 20px;
+}
+
+#btn-restart {
+    margin: 40px 10px 60px auto;
+    padding: 10px 20px;
+    background-color: #e9a02a;
+    color:#f6ecdc;
+    border: none;
+}
+
+#btn-select {
+    margin: 40px 10px 60px auto;
+    padding: 10px 20px;
+    background-color: #e9a02a;
+    color:#f6ecdc;
+    border: none;
+}
+
+/* フッター */
 footer {
-  text-align: center;
+    text-align: center;
+    color: #4d4535
 }

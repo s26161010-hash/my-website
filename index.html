@@ -1,147 +1,103 @@
 <!DOCTYPE html>
-<html lang="jp">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>課題１</title>
+    <title>課題２</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon (2).ico" type="image/x-icon">
 </head>
 <body>
-<header>
-    <img src="img/site_logo.png" alt="site_logo" />
-    <div class="site_reserve">
-        <h3>ご予約はこちらから</h3>
-        <h2>TEL:000-0000-0000</h2>
-        <a href="https://forms.gle/XiaLXMXMDiXHZbpCA">Web予約フォーム</a>
-    </div>
-</header>
-<main>
-    <nav>
-        <ul>
-            <li><a href="#">トップ</a></li>
-            <li><a href="#main-news">お知らせ</a></li>
-            <li><a href="#main-concept">コンセプト</a></li>
-            <li><a href="#main-menu">メニュー</a></li>
-            <li><a href="#main-access">アクセス</a></li>
-        </ul>
-    </nav>
-    <section id="main-event">
-        <h2>《イベントの様子》</h2>
-        <img src="img/main_img14.jpg" alt="画像" />
-        <img src="img/main_img2.jpg" alt="画像" />
-        <img src="img/main_img8.jpg" alt="画像" /> 
-        <img src="img/main_img12.jpg" alt="画像" />
-        <img src="img/main_img4.jpg" alt="画像" />
-        <img src="img/main_img15.jpg" alt="画像" />  
-    </section>
-    <section id="main-news">
-        <img src="img/news_logo.png" alt="news_logo" /> 
-        <h2>お知らせ</h2>
-        <h3>カレンダー</h3>
-        <div class="calendar_news">
-            <iframe src="https://calendar.google.com/calendar/embed?src=ja.japanese%23holiday%40group.v.calendar.google.com&ctz=Asia%2FTokyo" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+    <script src="main.js" defer></script>
+
+    <header>
+        <div class="header">
+            <img src="はぴりゅう.png" alt="画像">
+            <h2>福井クイズ</h2>
         </div>
-    </section>
-    <section id="main-concept">
-        <img src="img/concept_logo.png" alt="concept_logo" />
-        <h2>コンセプト</h2>
-        <div class="concept_category">
+    </header>
+
+    <main>
+        
+        <!--スタート画面-->
+        <section id="screen-start">
+            <h1>福井クイズ</h1>
             <p>
-                素材を生かした、飽きさせない味。<br />
-                本場イタリアで大人気の本格イタリア料理店がついに日本上陸。<br /><br />
-                こだわり空間で心地よいひと時を。<br />
-                当店自慢のテラスで極上のイタリア料理をお楽しみください。<br /><br /><br />
+                福井県についてのクイズです！<br>何問正解できる？
             </p>
-            <img src="img/concept_img1.jpg" alt="concept_img1" />
-           
-        </div>
-    </section>
-    <section id="main-menu">
-        <img src="img/menu_img.png" alt="menu_img" />
-        <h2>メニュー</h2>
-        <div class="menu_category">
-            <h3>【パスタ】</h3>
-            <img src="img/menu_pasta.jpg" alt="menu_pasta" />
-            <ul>
-                <li>ペペロンチーノ</li>
-                <li>海鮮トマトソースパスタ</li>
-                <li>本格イタリアンミートソース</li>
-                <li>ベーコンとほうれん草のクリームパスタ</li>
-            </ul>
-            <h3>【ピザ】</h3>
-            <img src="img/menu_pizza.jpg" alt="menu_pizza" />
-            <ul>
-                <li>マルゲリータ</li>
-                <li>シーフード</li>
-                <li>コーンポテト</li>
-                <li>エビベーコン</li>
-            </ul>
-            <h3>【スイーツ】</h3>
-            <img src="img/menu_sweet.jpg" alt="menu_sweet" />
-            <ul>
-                <li>パンケーキ</li>
-                <li>アイスクリーム</li>
-                <li>パフェ</li>
-                <li>ガトーショコラ</li>
-            </ul>
-            <h3>【ドリンク】</h3>
-            <img src="img/menu_drink.jpg" alt="menu_drink" />
-            <ul>
-                <li>コーラ</li>
-                <li>ジンジャーエール</li>
-                <li>オレンジジュース</li>
-                <li>りんごジュース</li>
-                <li>ウーロン茶</li>
-            </ul>
-        </div>
-    </section>
-    <section id="main-takeout">
-        <img src="img/takeout_logo.png" alt="takeout_logo" />
-        <h2>テイクアウト</h2>
-        <h3>【フライドチキン】</h3>
-        <div class="takeout_menu">
-            <img src="img/takeout_img0.jpg" alt="takeout_img0"/>
-            <ul>
-                <li>6個:430円（税込）</li>
-                <li>10個:539円（税込）</li>
-                <li>20個:1,077円（税込）</li>
-                <li>30個:1,616円（税込）</li>
-            </ul>
-            <h3>【ピザ・マルゲリータ】</h3>
-            <img src="img/takeout_img1.jpg" alt="takeout_img1"/>
-            <ul>
-                <li>Sサイズ:1,077円（税込）</li>
-                <li>Mサイズ:2,030円（税込）</li>
-                <li>Lサイズ:2,790円（税込）</li>
-                <li>XLサイズ:5,076円（税込）</li><br>
-            </ul>
-        </div>
-        <h3>ご注文はこちらから</h3>
-        <h3>TEL:000-000-0000</h3>
-    </section>
-    <section id="main-access">
-        <img src="img/access_img.png" alt="access_img" class="access_logo"/>
-        <h2>アクセス</h2>
-        <h3>【マップ】</h3>
-        <div class="access_map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1842.4881724666848!2d136.27629635181745!3d36.10950910272124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5ff8950f5c0c39c1%3A0x628e0aeadb86511!2z56aP5LqV55yM56uL5aSn5a2mIOawuOW5s-WvuuOCreODo-ODs-ODkeOCuQ!5e0!3m2!1sja!2sjp!4v1777600787002!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <h3>【住所】</h3>
-            <h3>〒000-0000</h3>
-            <h3>福井県鯖江市XXXXXXXXXXXX</h3>
-            <h3>TEL:000-0000-0000</h3>
-            <h3>営業時間:11:00〜15:00</h3>
-            <h3>17:00〜22:00</h3>
-            <h3>定休日：火曜日</h3>
-            <h3>ご予約はこちらから</h3>
-            <h2>TEL:000-0000-0000</h2>
-            <a href="https://forms.gle/XiaLXMXMDiXHZbpCA">Web予約フォーム</a>
-        </div>
-    </section>
-</main>
-<footer>
-    <h3>&copy;KendaiBistro</h3>
-</footer>
+            <button id="btn-start" class="btn-start btn-primary">
+                <h3>スタート</h3>
+            </button>
+        </section>
+
+        <!--ステージ選択画面-->
+        <section id="screen-stageselect" class="hidden">
+            <h4>ステージを選択してください</h4>
+            <div class="stage-select">
+                <button class="stage-btn" data-stage="municipalities">
+                    <h3>地名</h3>
+                    <p>全17問</p>
+                </button>
+                <button class="stage-btn" data-stage="sightseeing">
+                    <h3>観光</h3>
+                    <p>全10問</p>
+                </button>
+                <button class="stage-btn" data-stage="speciality">
+                    <h3>特産品・名産品</h3>
+                    <p>全10問</p>
+                </button>
+            </div>
+        </section>
+        
+        <!--本編-->
+        <section id="screen-game" class="hidden">
+            <div class="game-layout">
+                <div class="quiz-main game-card">
+                    <div id="question-index" class="question-number">
+                        第１問
+                    </div>
+
+                    <!--問題文-->
+                    <div class="question-box">
+                        <h3 id="question-text" class="question-text"></h3>
+                        <img id="question-image" class="question-img hidden" alt="地図">
+                    </div>
+                    
+                    <!--選択肢-->
+                    <div class="options-container">
+                        <div id="options-grid"></div>  
+                            
+                        <!--解答と解説-->
+                        <div id="feedback-panel" class="feedback-panel hidden">
+                            <div id="feedback-title" class="feedback-title">
+                                <!--正解 / 不正解-->
+                            </div>
+                            <p id="feedback-description" class="feedback-description">
+                                解説
+                            </p>
+                            <button id="btn-next" class="btn-next">
+                                次の問題
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--結果-->
+        <section id="screen-result" class="hidden">
+            <h2>結果発表</h2>
+            <p id="result-score" class="result-score"></p>
+            <div class="result-buttons">
+                <button id="btn-restart">もう一度挑戦する</button>
+                <button id="btn-select">ステージ選択画面に戻る</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; kadai 2. Fukui Quiz</p>
+    </footer>
 
 </body>
 </html>
